@@ -15,7 +15,7 @@ while { printf("Schluesselwort gefunden! Schluesselwort=%s \n",yytext); }
 {sign}?{ziffer}+([.,]){ziffer}+ { printf("Gleitkommazahl gefunden! Zahlenwert=%s \n",yytext); }
 %%
 
-yywrap()
+int yywrap()
 {
  return 0;
 };

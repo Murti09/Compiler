@@ -41,14 +41,14 @@ void parser()
 
 void S()
 {
-    if (token == 'a' || token == 'b' || token == 'c')
+    if (token == 'a' || token == 'b')
     {
         A();
         B();
         C();
     }
     else
-        printf("Syntaxfehler: a, b oder c erwartet\n");
+        printf("Syntaxfehler: a oder b erwartet\n");
 }
 
 void A()
